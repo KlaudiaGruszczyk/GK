@@ -13,12 +13,9 @@ public class transform2d extends JPanel {
 		protected void paintComponent(Graphics g) {
 			super.paintComponent(g);
 			Graphics2D g2 = (Graphics2D)g;
-			g2.translate(300,300);  // Moves (0,0) to the center of the display.
+			g2.translate(300,300);  /
 			int whichTransform = transformSelect.getSelectedIndex();
 
-			// TODO Apply transforms here, depending on the value of whichTransform!
-			
-		
 
 			 switch(whichTransform)
 			{
@@ -98,7 +95,7 @@ public class transform2d extends JPanel {
 	private JComboBox<String> transformSelect;
 
 	public transform2d() throws IOException {
-		//pic = ImageIO.read(getClass().getClassLoader().getResource("shuttle.jpg"));
+	
 		display = new Display();
 		display.setBackground(Color.blue);
 		display.setPreferredSize(new Dimension(600,600));
